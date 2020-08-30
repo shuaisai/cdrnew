@@ -22,7 +22,7 @@ func main() {
 	day := tools.TimeToString(time.Now().Format("2006-01-02"))
 	rand.Seed(time.Now().UnixNano())
 
-	cfg, err := ini.Load("D:\\goproject\\src\\awesomeProject\\cdr\\main\\cdr.ini")
+	cfg, err := ini.Load("./cdr.ini")
 	tools.GetErr("load config", err)
 
 	dn := cfg.Section("cdr").Key("dn").String() // 将结果转为string
