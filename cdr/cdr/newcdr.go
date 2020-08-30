@@ -109,6 +109,6 @@ func NewCdr() *CdrNew {
 		SmsGT:      "8613010591500",
 		//startTime:  "",
 		//endTime:    "",
-		Extend: "              ",
+		Extend: "90775873      ",
 	}
 }

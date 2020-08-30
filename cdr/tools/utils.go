@@ -3,6 +3,7 @@ package tools
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"math/rand"
 	"os"
 	"strings"
@@ -50,4 +51,10 @@ func WriteToFile(filepath, str string) {
 	writer := bufio.NewWriter(file)
 	writer.WriteString(str)
 	writer.Flush()
+}
+
+func GetErr(msg string, err error) {
+	if err != nil {
+		log.Printf("%v err->%v\n", msg, err)
+	}
 }
